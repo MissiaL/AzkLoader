@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>350</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>356</width>
+    <height>595</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>PreferDefault</stylestrategy>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Выкачивание сборок</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayoutAzk">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="azkButton">
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+          <kerning>false</kerning>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string notr="true">Выкачать сборку АЦК-ФИНАНСЫ</string>
+        </property>
+        <property name="statusTip">
+         <string notr="true"/>
+        </property>
+        <property name="whatsThis">
+         <string notr="true"/>
+        </property>
+        <property name="accessibleName">
+         <string notr="true"/>
+        </property>
+        <property name="accessibleDescription">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string notr="true">АЦК - ФИНАНСЫ</string>
+        </property>
+        <property name="shortcut">
+         <string notr="true">1</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayoutGz">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="gzButton">
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string notr="true">Выкачать сборку АЦК-ГОСЗАКАЗ</string>
+        </property>
+        <property name="statusTip">
+         <string notr="true"/>
+        </property>
+        <property name="whatsThis">
+         <string notr="true"/>
+        </property>
+        <property name="accessibleName">
+         <string notr="true"/>
+        </property>
+        <property name="accessibleDescription">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string notr="true">АЦК - ГОСЗАКАЗ</string>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayoutBk">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="bkButton">
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string notr="true">Выкачивание сборки АЦК - БЮДЖЕТНЫЙ УЧЕТ</string>
+        </property>
+        <property name="statusTip">
+         <string notr="true"/>
+        </property>
+        <property name="whatsThis">
+         <string notr="true"/>
+        </property>
+        <property name="accessibleName">
+         <string notr="true"/>
+        </property>
+        <property name="accessibleDescription">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string notr="true">АЦК - БЮДЖЕТНЫЙ УЧЕТ</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>350</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="statusTip">
+     <string notr="true"/>
+    </property>
+    <property name="whatsThis">
+     <string notr="true"/>
+    </property>
+    <property name="accessibleName">
+     <string notr="true"/>
+    </property>
+    <property name="accessibleDescription">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string notr="true">Меню</string>
+    </property>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="about">
+    <property name="toolTip">
+     <string notr="true"/>
+    </property>
+    <property name="statusTip">
+     <string notr="true"/>
+    </property>
+    <property name="whatsThis">
+     <string notr="true"/>
+    </property>
+    <property name="accessibleName">
+     <string notr="true"/>
+    </property>
+    <property name="accessibleDescription">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string notr="true">О программе</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="about"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="exit">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string notr="true">Выход</string>
+   </property>
+   <property name="toolTip">
+    <string notr="true">Выход из программы</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>exit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>177</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

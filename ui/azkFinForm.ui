@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogAzk</class>
+ <widget class="QDialog" name="DialogAzk">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>392</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Настройка выкачивания</string>
+  </property>
+  <property name="toolTip">
+   <string notr="true"/>
+  </property>
+  <property name="statusTip">
+   <string notr="true"/>
+  </property>
+  <property name="whatsThis">
+   <string notr="true"/>
+  </property>
+  <property name="accessibleName">
+   <string notr="true"/>
+  </property>
+  <property name="accessibleDescription">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="HeadLayout">
+   <item row="9" column="1">
+    <widget class="QPushButton" name="pushButton">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Скачать</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <layout class="QGridLayout" name="gridLayout_6">
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="lineEditPath">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <property name="statusTip">
+        <string notr="true"/>
+       </property>
+       <property name="whatsThis">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleName">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleDescription">
+        <string notr="true"/>
+       </property>
+       <property name="inputMask">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QGridLayout" name="gridLayout_7">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelPath">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string notr="true">Путь к папке. Например: C:\soft\sborki</string>
+       </property>
+       <property name="statusTip">
+        <string notr="true"/>
+       </property>
+       <property name="whatsThis">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleName">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleDescription">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Путь</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="1">
+    <layout class="QGridLayout" name="gridLayout_10">
+     <item row="1" column="0">
+      <widget class="QComboBox" name="comboBoxDatabase">
+       <item>
+        <property name="text">
+         <string>Oracle</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Firebird</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="8" column="1">
+    <layout class="QGridLayout" name="gridLayout_16">
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="lineEditPort"/>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="lineEditVersionDownload">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelVersionDownload">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string notr="true">Необходимо указать версию. Например 2.39.109</string>
+       </property>
+       <property name="statusTip">
+        <string notr="true"/>
+       </property>
+       <property name="whatsThis">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleName">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleDescription">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Версия сборки</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="checkBoxServer">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <property name="statusTip">
+        <string notr="true"/>
+       </property>
+       <property name="whatsThis">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleName">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleDescription">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string notr="true">Сервер</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="checkBoxWebServer">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="statusTip">
+        <string notr="true"/>
+       </property>
+       <property name="whatsThis">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleName">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleDescription">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string notr="true">Web сервер</string>
+       </property>
+       <property name="shortcut">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="checkBoxClient">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <property name="statusTip">
+        <string notr="true"/>
+       </property>
+       <property name="whatsThis">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleName">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleDescription">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string notr="true">Клиент</string>
+       </property>
+       <property name="shortcut">
+        <string notr="true"/>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelWhatDownload">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string notr="true">Необходимо выбрать компоненты, которые будут выкачены в папку</string>
+       </property>
+       <property name="statusTip">
+        <string notr="true"/>
+       </property>
+       <property name="whatsThis">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleName">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleDescription">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Выкачиваем</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="8" column="0">
+    <layout class="QGridLayout" name="gridLayout_15">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelPort">
+       <property name="toolTip">
+        <string>Можно не указывать</string>
+       </property>
+       <property name="text">
+        <string>Порт</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="7" column="1">
+    <layout class="QGridLayout" name="gridLayout_13">
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="lineEditShemaPassword"/>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="1">
+    <layout class="QGridLayout" name="gridLayoutLineEditFbPath"/>
+   </item>
+   <item row="7" column="0">
+    <layout class="QGridLayout" name="gridLayout_14">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelShemaPassword">
+       <property name="toolTip">
+        <string>Можно не указывать</string>
+       </property>
+       <property name="text">
+        <string>Пароль</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <layout class="QGridLayout" name="gridLayout_9">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelDatabase">
+       <property name="text">
+        <string>Тип бд</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="0">
+    <layout class="QGridLayout" name="gridLayout_11">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelShemaName">
+       <property name="toolTip">
+        <string>Можно не указывать</string>
+       </property>
+       <property name="text">
+        <string>Имя схемы</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="1">
+    <layout class="QGridLayout" name="gridLayout_8">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_12">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="lineEditShemaName"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <layout class="QGridLayout" name="gridLayoutLabelFbPath"/>
+   </item>
+   <item row="6" column="1">
+    <layout class="QGridLayout" name="gridLayoutShemaList">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButtonShemaList">
+       <property name="text">
+        <string>Список схем</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

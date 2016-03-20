@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogShemaList</class>
+ <widget class="QDialog" name="DialogShemaList">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>841</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>841</width>
+    <height>694</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Список схем</string>
+  </property>
+  <property name="toolTip">
+   <string notr="true"/>
+  </property>
+  <property name="statusTip">
+   <string notr="true"/>
+  </property>
+  <property name="whatsThis">
+   <string notr="true"/>
+  </property>
+  <property name="accessibleName">
+   <string notr="true"/>
+  </property>
+  <property name="accessibleDescription">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QGridLayout" name="gridLayoutShemaList">
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBoxShemaList">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <property name="statusTip">
+        <string notr="true"/>
+       </property>
+       <property name="whatsThis">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleName">
+        <string notr="true"/>
+       </property>
+       <property name="accessibleDescription">
+        <string notr="true"/>
+       </property>
+       <property name="title">
+        <string notr="true">select * from user$ </string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutShemaList">
+          <item>
+           <widget class="QTreeWidget" name="treeWidgetShemaList">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="sortingEnabled">
+             <bool>true</bool>
+            </property>
+            <property name="animated">
+             <bool>false</bool>
+            </property>
+            <property name="allColumnsShowFocus">
+             <bool>false</bool>
+            </property>
+            <attribute name="headerCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="headerDefaultSectionSize">
+             <number>318</number>
+            </attribute>
+            <attribute name="headerHighlightSections">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="headerMinimumSectionSize">
+             <number>60</number>
+            </attribute>
+            <attribute name="headerStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string notr="true">Имя схемы</string>
+             </property>
+             <property name="toolTip">
+              <string notr="true"/>
+             </property>
+             <property name="statusTip">
+              <string notr="true"/>
+             </property>
+             <property name="whatsThis">
+              <string notr="true"/>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string notr="true">Версия</string>
+             </property>
+             <property name="toolTip">
+              <string notr="true"/>
+             </property>
+             <property name="statusTip">
+              <string notr="true"/>
+             </property>
+             <property name="whatsThis">
+              <string notr="true"/>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string notr="true">Дата создания</string>
+             </property>
+             <property name="toolTip">
+              <string notr="true"/>
+             </property>
+             <property name="statusTip">
+              <string notr="true"/>
+             </property>
+             <property name="whatsThis">
+              <string notr="true"/>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
