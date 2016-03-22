@@ -1,9 +1,9 @@
 # coding=utf-8
 import cx_Oracle
 
-def getDbShemaList():
-    dsn_tns = cx_Oracle.makedsn('', 1521, 'support11')
-    con = cx_Oracle.connect('sys', '', dsn_tns, mode=cx_Oracle.SYSDBA)
+def getDbShemaList(server, sid, user, password):
+    dsn_tns = cx_Oracle.makedsn(server, 1521, sid)
+    con = cx_Oracle.connect(user, password, dsn_tns, mode=cx_Oracle.SYSDBA)
     cur = con.cursor()
     cur.execute('''
     select u.name, U.EXT_USERNAME, D.CREATED from user$ u

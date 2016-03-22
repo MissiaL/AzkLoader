@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Python\MissiaLProject\Sketches\gui\azkFinForm.ui'
+# Form implementation generated from reading ui file 'C:\Python\MissiaLProject\Sketches\AzkLoader\ui\azkFinForm.ui'
 #
 # Created by: PyQt5 UI code generator 5.5.1
 #
@@ -23,12 +23,12 @@ class Ui_DialogAzk(object):
         DialogAzk.setAccessibleDescription("")
         self.HeadLayout = QtWidgets.QGridLayout(DialogAzk)
         self.HeadLayout.setObjectName("HeadLayout")
-        self.pushButton = QtWidgets.QPushButton(DialogAzk)
+        self.pushButtonLoading = QtWidgets.QPushButton(DialogAzk)
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.pushButton.setFont(font)
-        self.pushButton.setObjectName("pushButton")
-        self.HeadLayout.addWidget(self.pushButton, 9, 1, 1, 1)
+        self.pushButtonLoading.setFont(font)
+        self.pushButtonLoading.setObjectName("pushButtonLoading")
+        self.HeadLayout.addWidget(self.pushButtonLoading, 9, 1, 1, 1)
         self.gridLayout_6 = QtWidgets.QGridLayout()
         self.gridLayout_6.setObjectName("gridLayout_6")
         self.lineEditPath = QtWidgets.QLineEdit(DialogAzk)
@@ -45,6 +45,9 @@ class Ui_DialogAzk(object):
         self.lineEditPath.setPlaceholderText("")
         self.lineEditPath.setObjectName("lineEditPath")
         self.gridLayout_6.addWidget(self.lineEditPath, 0, 0, 1, 1)
+        self.toolButtonPath = QtWidgets.QToolButton(DialogAzk)
+        self.toolButtonPath.setObjectName("toolButtonPath")
+        self.gridLayout_6.addWidget(self.toolButtonPath, 0, 1, 1, 1)
         self.HeadLayout.addLayout(self.gridLayout_6, 2, 1, 1, 1)
         self.gridLayout_7 = QtWidgets.QGridLayout()
         self.gridLayout_7.setObjectName("gridLayout_7")
@@ -218,7 +221,8 @@ class Ui_DialogAzk(object):
 
     def retranslateUi(self, DialogAzk):
         _translate = QtCore.QCoreApplication.translate
-        self.pushButton.setText(_translate("DialogAzk", "Скачать"))
+        self.pushButtonLoading.setText(_translate("DialogAzk", "Скачать"))
+        self.toolButtonPath.setText(_translate("DialogAzk", "..."))
         self.labelPath.setText(_translate("DialogAzk", "Путь"))
         self.comboBoxDatabase.setItemText(0, _translate("DialogAzk", "Oracle"))
         self.comboBoxDatabase.setItemText(1, _translate("DialogAzk", "Firebird"))

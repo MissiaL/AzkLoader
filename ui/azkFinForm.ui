@@ -35,7 +35,7 @@
   </property>
   <layout class="QGridLayout" name="HeadLayout">
    <item row="9" column="1">
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="pushButtonLoading">
      <property name="font">
       <font>
        <pointsize>14</pointsize>
@@ -78,6 +78,13 @@
        </property>
        <property name="placeholderText">
         <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QToolButton" name="toolButtonPath">
+       <property name="text">
+        <string>...</string>
        </property>
       </widget>
      </item>
