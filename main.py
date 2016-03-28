@@ -328,24 +328,24 @@ class ThreadCopy(QThread):
         for file in files:
             if file == 'server.zip':
                 self.signal.emit('Извлекаем {}...\n'.format(file))
-                sp.call(extr + ' x ' + file, stdout=sp.DEVNULL)
+                sp.call(extr + ' x ' + file)
                 self.signal.emit('Извлечение завершено\n')
         for file in files:
             if file == 'client.zip':
                 self.signal.emit('Извлекаем {}...\n'.format(file))
-                sp.call(extr + ' x ' + file + ' -oclient' + ' -y', stdout=sp.DEVNULL)
+                sp.call(extr + ' x ' + file + ' -oclient' + ' -y')
                 self.signal.emit('Извлечение завершено\n')
         for file in files:
             if self.report:
                 if 'report' in file:
                     self.signal.emit('Извлекаем {}...\n'.format(file))
-                    sp.call(extr + ' x ' + file +' -y', stdout=sp.DEVNULL)
+                    sp.call(extr + ' x ' + file +' -y')
                     self.signal.emit('Извлечение завершено\n')
         for file in files:
             if self.report:
                 if 'apache' in file:
                     self.signal.emit('Извлекаем {}...\n'.format(file))
-                    sp.call(extr + ' x ' + file + ' -y', stdout=sp.DEVNULL)
+                    sp.call(extr + ' x ' + file + ' -y')
                     self.signal.emit('Извлечение завершено\n')
         for file in files:
             if self.report:
@@ -396,7 +396,7 @@ class DialogLog(QDialog, Ui_DialogLog):
 
     def checkDir(self, destination):
         if not os.path.isdir(destination):
-            self.writeLog('Создаем папку {}\n'.format(destination))
+            self.writeLog('Создаем папку {}\n'.format(os.path.normpath(destination)))
             os.makedirs(destination)
         else:
             reply = QMessageBox.question(self, 'Внимание', "Папка уже создана. Удалить папку?",
