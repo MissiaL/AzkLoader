@@ -12,6 +12,14 @@ server =
 ;Папка, куда скачиваются сборки
 path = E:\\work\\azk
 port = 2015
+; Путь к архиватору 7z
+7z = C:\Program Files\7-Zip\7z.exe
+[azkfin]
+;Пути, где хранятся сборки АЦК-Финансы
+path1 = //srv-fs-azkbuild/azkf/builds/azk2
+path2 = //Srv-build1/build/AZK/builds
+report1 = //srv-fs-azkbuild/azkf/builds/reports
+report2 = //Srv-build1/build/Reports
 '''
 
 
