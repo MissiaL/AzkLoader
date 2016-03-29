@@ -6,20 +6,20 @@ import re
 import shutil
 import subprocess as sp
 import traceback
-import replacer
 
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import Qt, QDateTime, pyqtSignal, QDir, QThread
 from PyQt5.QtWidgets import QMainWindow, QApplication, QDialog, QMessageBox, QFileDialog
 
-from DialogLog import Ui_DialogLog
-from DialogReports import Ui_DialogReports
-from GoupBoxShemaListDialog import Ui_DialogShemaList
-from azk import Ui_MainWindow
-from azkFinForm import Ui_DialogAzk
+import replacer
 from configurator import Configurator
 from db import getDbShemaList
-import time
+from forms.formheadwindow import Ui_MainWindow
+from forms.formlog import Ui_DialogLog
+from forms.formsettings import Ui_DialogAzk
+from forms.formshemalist import Ui_DialogShemaList
+from forms.formversionlist import Ui_DialogReports
+
 
 class MainForm(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -218,10 +218,10 @@ class AzkForm(QDialog, Ui_DialogAzk):
                 if self.versiondict:
                     if version in self.versiondict:
                         headfolder = self.versiondict[version]
-                        files = [os.path.join(headfolder,i) for i in files]
+                        files = [os.path.join(headfolder, i) for i in files]
                     else:
                         headfolder = self.checkPathVersion(version)
-                        files = [os.path.join(headfolder,i) for i in files]
+                        files = [os.path.join(headfolder, i) for i in files]
                 else:
                     self.checkPathVersion(version)
                     headfolder = self.checkPathVersion(version)
@@ -238,7 +238,6 @@ class AzkForm(QDialog, Ui_DialogAzk):
         else:
             destination = homefolder
             self.DialogLog.startLoadVersion(files, destination, self.extr, shema, password, port, report=True)
-
 
     def checkPathVersion(self, version):
         versionFolder = '.'.join(version.split('.')[:2])
@@ -293,7 +292,6 @@ class DialogReports(QDialog, Ui_DialogReports):
 
 
 class ThreadCopy(QThread):
-
     signal = pyqtSignal(str)
     buttonEnable = pyqtSignal(bool)
 
@@ -339,7 +337,7 @@ class ThreadCopy(QThread):
             if self.report:
                 if 'report' in file:
                     self.signal.emit('Извлекаем {}...\n'.format(file))
-                    sp.call(extr + ' x ' + file +' -y')
+                    sp.call(extr + ' x ' + file + ' -y')
                     self.signal.emit('Извлечение завершено\n')
         for file in files:
             if self.report:
@@ -387,7 +385,7 @@ class DialogLog(QDialog, Ui_DialogLog):
     def closeWindow(self):
         self.hide()
 
-    def startLoadVersion(self, files, destination,extr, shema=None, password=None, port=None, report=False):
+    def startLoadVersion(self, files, destination, extr, shema=None, password=None, port=None, report=False):
         self.thread = ThreadCopy(files, destination, extr, shema=shema, password=password, port=port, report=report)
         self.thread.signal.connect(self.writeLog)
         self.thread.buttonEnable.connect(self.buttonEnable)
